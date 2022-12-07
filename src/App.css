@@ -1,0 +1,222 @@
+:root{
+  --main-color: rgb(255, 153, 0);
+  --main-color-sec: rgb(99, 0, 165);
+  --main-color-sec-dark: rgb(46, 0, 77);
+  --light: rgb(255, 255, 255);
+  --grey: rgb(171, 171, 171);
+  --dark: rgb(0,0,0);
+
+}
+
+.category ul{
+  display: flex;
+  background-color: var(--main-color-sec);
+  padding-bottom: 0.5rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.category ul li{
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: all ease 200ms;
+}
+
+.category ul li:hover{
+  color: var(--main-color);
+  cursor: pointer;
+  background-color: var(--light);
+  padding: 1rem;
+  padding-top: 0.5rem;
+  border-radius: 1rem;
+  transition: all ease 200ms;
+}
+
+.SearchBar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 5vw;
+  width: 90vw;
+  height: 2rem;
+  border-width: 5px;
+  border-radius: 10px;
+  background-color: var(--grey);
+  transition: all ease 200ms;
+  color: var(--light);
+}
+
+.SearchBar:hover {
+  border-color: var(--main-color);
+  transition: all ease 200ms;
+}
+
+.ShowPopTitle {
+  Color: var(--main-color);
+  background-color: var(--main-color-sec);
+  padding-bottom: 0.5rem;
+  border-radius: 1rem 1rem 0 0; 
+  display: flex;
+}
+
+.ShowPopTitle h2{
+  font-size: xx-large;
+  font-weight: bold;
+  margin-left: 2rem;
+  text-decoration: underline;
+}
+
+.List {
+  width: 100vw;
+  display: flex;
+  background-color: var(--main-color-sec);
+  font-weight: bold;
+  overflow-x: auto;
+  scrollbar-width: auto;
+  transition: 0s;
+  
+}
+
+.List li{
+  text-align: center;
+  margin-left: 1rem;
+  transition: all ease 200ms;
+  margin-bottom: 1rem;
+}
+
+.List li a {
+  margin-bottom: 2rem;
+  background-color: var(--main-color-sec-dark);
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.2rem;
+  transition: all ease 0.4s;
+}
+
+.List li:hover a{
+  background-color: var(--grey);
+  color: var(--dark);
+  transition: all ease 0.8s;
+}
+
+.List li .PosterSize {
+  width: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.List li:hover{
+  background-color: var(--light);
+  transition: all ease 200ms;
+  color: var(--main-color);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 1rem;
+  border-color: var(--main-color-sec);
+  border-width: 1rem;
+  padding-bottom: 1rem;
+}
+
+.List li .Overview{
+  display: none;
+}
+
+.List li:hover .Overview{
+  display: block;
+}
+
+.List li:hover div p{
+  width: max-content;
+  max-width: 20vw;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.List li div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-row: 2;
+  transition: all 200ms;
+
+}
+
+.MoviePopTitle {
+  Color: var(--main-color);
+  background-color: var(--main-color-sec);
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem 1rem 0 0; 
+  display: flex;
+}
+
+.MoviePopTitle h2{
+  font-size: xx-large;
+  font-weight: bold;
+  margin-left: 2rem;
+  text-decoration: underline;
+}
+.progress {
+  background-color: rgb(168, 166, 166);
+  justify-content: flex-start;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 100%;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px rgb(189, 186, 186);
+  border-radius: 10px;
+  background: rgb(22, 17, 17);
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+.Percent {
+  display:flex;
+  justify-content:space-between;
+}
+.Percent h2{
+  color: aquamarine;
+}
+
+.btn-shine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@keyframes shine {
+  0%{
+    background-position: 0;
+  }
+  60%{
+    background-position: 180px;
+  }
+  100%{
+    background-position: 180px;
+  }
+}
