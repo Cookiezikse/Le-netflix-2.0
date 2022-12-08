@@ -8,11 +8,20 @@
 
 }
 
+body {
+  background: #5F8D4E;
+}
+
+
 .category ul{
   display: flex;
-  background-color: var(--main-color-sec);
+  background: #5f8d4e;
+  background: -webkit-linear-gradient(0deg, #5f8d4e 0%, #1b0f0f 100%);
+  background: linear-gradient(0deg, #5f8d4e 0%, #1b0f0f 100%);
   padding-bottom: 0.5rem;
   border-radius: 0 0 1rem 1rem;
+  
+  
 }
 
 .category ul li{
@@ -20,10 +29,11 @@
   font-weight: bold;
   font-size: 1.8rem;
   transition: all ease 200ms;
+  color:#A4BE7B;
 }
 
 .category ul li:hover{
-  color: var(--main-color);
+  color: #678983;
   cursor: pointer;
   background-color: var(--light);
   padding: 1rem;
@@ -46,13 +56,13 @@
 }
 
 .SearchBar:hover {
-  border-color: var(--main-color);
+  border-color: #678983;
   transition: all ease 200ms;
 }
 
 .ShowPopTitle {
-  Color: var(--main-color);
-  background-color: var(--main-color-sec);
+  
+  color: #E5D9B6;
   padding-bottom: 0.5rem;
   border-radius: 1rem 1rem 0 0; 
   display: flex;
@@ -68,7 +78,6 @@
 .List {
   width: 100vw;
   display: flex;
-  background-color: var(--main-color-sec);
   font-weight: bold;
   overflow-x: auto;
   scrollbar-width: auto;
@@ -143,8 +152,7 @@
 }
 
 .MoviePopTitle {
-  Color: var(--main-color);
-  background-color: var(--main-color-sec);
+  Color: #E5D9B6;
   margin-top: 2rem;
   padding-bottom: 0.5rem;
   border-radius: 1rem 1rem 0 0; 
@@ -157,6 +165,25 @@
   margin-left: 2rem;
   text-decoration: underline;
 }
+
+.back {
+  background: radial-gradient(at bottom right, #e5d9b6 0, #e5d9b6 21.25px, rgba(229,217,182,0.2) 21.25px, rgba(229,217,182,0.2) 42.5px, rgba(229,217,182,0.75) 42.5px, rgba(229,217,182,0.75) 63.75px, rgba(229,217,182,0.25) 63.75px, rgba(229,217,182,0.25) 85px, rgba(229,217,182,0.3) 85px, rgba(229,217,182,0.3) 106.25px, rgba(229,217,182,0.75) 106.25px, rgba(229,217,182,0.75) 127.5px, rgba(229,217,182,0.2) 127.5px, rgba(229,217,182,0.2) 148.75px, transparent 148.75px, transparent 170px), radial-gradient(at top left, transparent 0, transparent 21.25px, rgba(229,217,182,0.2) 21.25px, rgba(229,217,182,0.2) 42.5px, rgba(229,217,182,0.75) 42.5px, rgba(229,217,182,0.75) 63.75px, rgba(229,217,182,0.3) 63.75px, rgba(229,217,182,0.3) 85px, rgba(229,217,182,0.25) 85px, rgba(229,217,182,0.25) 106.25px, rgba(229,217,182,0.75) 106.25px, rgba(229,217,182,0.75) 127.5px, rgba(229,217,182,0.2) 127.5px, rgba(229,217,182,0.2) 148.75px, #e5d9b6 148.75px, #e5d9b6 170px, transparent 170px, transparent 425px);
+  background-blend-mode: multiply;
+  background-size: 170px 170px, 170px 170px;
+  background-color: #a4be7b;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .progress {
   background-color: rgb(168, 166, 166);
   justify-content: flex-start;
@@ -220,3 +247,5 @@
     background-position: 180px;
   }
 }
+
+

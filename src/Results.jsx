@@ -33,12 +33,13 @@ function Results() {
     return (
         <div>
             <input className="SearchBar" onChange={handlechange} type='text' placeholder=" Exemple: Chainsaw Man"/>
+            <div className="back">
             <div className="ShowPopTitle">
                 <h2>
                     Série Populaire
                 </h2>
             </div>
-            <ul className="List">
+            <ul className="List ">
                 {PopularListFiltered.map((tv) =>{
                     return <li key={tv.name} ><div><img className="PosterSize" id={tv.id} src={'https://image.tmdb.org/t/p/original'+tv.poster_path} alt='Image Du Film'></img><p className="Overview">{tv.overview}</p></div><a>{tv.name}</a>
                             <div class="progress Overview Percent">
@@ -47,7 +48,7 @@ function Results() {
                             </div></li>
                 })}
             </ul>
-            
+            </div>
             
         </div>
     );

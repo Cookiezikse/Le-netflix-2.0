@@ -16,7 +16,7 @@ function Movie() {
     },[]);
 
     return (
-        <div>
+        <div className="back">
             <div className="MoviePopTitle">
                 <h2>
                     Film Populaire

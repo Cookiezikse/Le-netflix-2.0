@@ -16,7 +16,7 @@ function Action() {
     },[]);
 
     return (
-        <div>
+        <div className="back">
             <div className="MoviePopTitle">
                 <h2>
                     Catégorie
